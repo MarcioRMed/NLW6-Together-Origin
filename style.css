@@ -1,4 +1,4 @@
-/* === RESET =====================================================*/
+/* === RESET =====================================*/
 *{
   margin: 0;
   padding: 0;
@@ -15,12 +15,16 @@ img{
 }
 
 
-/* === VARIABLES ================================================= */
+/* === VARIABLES ================================ */
 :root{
   /* font-size: 100%; 16px  - 1rem */
   /* font-size: 62,5%; /*10px  - 1rem */
 
-  
+  --header-height: 4.5rem;
+
+
+
+  /* colors */
   --hue: 159;
   /* --hue: 345; */
 
@@ -36,7 +40,7 @@ img{
   --body-color: hsl(0 0% 98%)
 }
 
-/* === BASE =====================================================*/
+/* === BASE ======================================*/
 
 body{
   font: 400 1rem 'DM Sans', sans-serif;
@@ -77,32 +81,9 @@ h1{
 }
 /*  */
 
-/* === LAYOUT =====================================================*/
-
-#header{
-  border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 2rem; /* converter px para rem 30px/16px = 2rem*/
-  display: flex;
-}
-
-nav{
-  height: 4.5rem; /* 72px = 16px 4.5rem */
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-}
-.logo{
-  font: 700 1.31rem 'Poppins', sans-serif;
-  color: var(--title-color);
-
-}
-
-.logo span{
-  color: var(--base-color)
-}
+/* === LAYOUT ====================================*/
 
 .container {
-  width: 100%;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -116,7 +97,42 @@ nav{
   padding: 5rem 0;
 }
 
-/* === HOME =====================================================*/
+#header{
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 2rem; /* converter px para rem 30px/16px = 2rem*/
+  display: flex;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--body-color);
+}
+
+nav{
+  height: var(--header-height); /* 72px = 16px 4.5rem */
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo{
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+
+}
+
+.logo span{
+  color: var(--base-color)
+}
+
+main{
+  margin-top: var(--header-height);
+}
+
+
+/* === HOME =====================================*/
 #home{
   overflow: hidden;
 }
@@ -125,9 +141,8 @@ nav{
   margin: 0;
 }
 
-#home .image {
-  position: relative;
-  right: 2.93rem;
+#home .image{
+  position: relative;  
 }
 
 #home .image::before{
@@ -138,13 +153,18 @@ nav{
   position: absolute;
   top: -16.8%;
   left: 16.7%;
-  z-index: -1;
+  z-index: 0;
 }
 
 
 #home .image img,
 #home .image::before{
   border-radius: 0.25rem;
+}
+
+#home .image img {
+  position: relative;
+  right: 2.93rem;
 }
 
 #home .text{
@@ -159,4 +179,5 @@ nav{
 
 #home .text p {
   margin-bottom: 2rem;
+  /* max-width: 100%; */
 }
