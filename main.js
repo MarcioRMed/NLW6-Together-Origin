@@ -1,3 +1,5 @@
+//============= MENU =======
+
 // abre e fecha o menu hamburger
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
@@ -17,6 +19,8 @@ for(const link of links){
   })
 }
 
+// fim Menu ============================
+
 // mudar o header da página quando der scroll
 
 const header = document.querySelector('#header')
@@ -32,3 +36,16 @@ window.addEventListener('scroll', function(){
     header.classList.remove('scroll')
   }
 })
+
+
+// testimonial slider - swiper - biblioteca carrocel 
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination:{
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true
+  
+});
