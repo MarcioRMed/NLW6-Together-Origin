@@ -21,7 +21,7 @@ for(const link of links){
 
 // fim Menu ============================
 
-// mudar o header da página quando der scroll
+// modifica o header da página quando der scroll
 
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
@@ -38,7 +38,7 @@ window.addEventListener('scroll', function(){
 })
 
 
-// testimonial slider - swiper - biblioteca carrocel 
+// testimonial slider - swiper - lib carrossel 
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
