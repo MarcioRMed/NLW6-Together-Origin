@@ -9,6 +9,10 @@
   - figma.com/file/iGG5yinsdfJVQcf5FwKadf/Origin-Six-(Copy)?node-id=61%3A144
 
 
+### Cria pacote de icones
+https://icomoon.io/app/#/select
+
+
 ### Link whatsapp api
 https://www.techtudo.com.br/dicas-e-tutoriais/2018/11/como-gerar-link-do-whatsapp.ghtml
 
