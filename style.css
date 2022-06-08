@@ -213,6 +213,11 @@ nav ul li a:hover{
   color: var(--base-color);
 }
 
+/* nav ul li a.active{
+  font-weight: bold;
+  
+} */
+
 nav ul li a::after{
   content: '';
   width:0%;
@@ -228,7 +233,8 @@ nav ul li a::after{
 
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after,
+nav ul li a.active::after{
   width: 100%;  
 }
 
@@ -579,9 +585,7 @@ footer .social a:hover{
 /* extra large devices: 1200 >  */
 /* large devices: 1023 >  */
 /* large devices: 992 >  */
-
-
-
+/* medium devices: 767 > */
 
 @media (min-width:1200px){
 /* reusable classes */
@@ -622,9 +626,15 @@ footer .social a:hover{
   nav .menu ul li a.title{
     /* font: 400 1rem var(--body-font); */
     font: 700 1rem var(--body-font);
+    -webkit-font-smoothing:antialiased;
   }
 
+  nav .menu ul li a.title.active{
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
   
+
   header.scroll .menu ul li a:hover{
     color: var(--base-color-second);
   }
@@ -634,8 +644,6 @@ footer .social a:hover{
   background-color: var(--base-color-second);
   
   }
-
-
 
   nav .icon-menu {
     display: none;
@@ -668,7 +676,6 @@ footer .social a:hover{
     margin: 0 auto;
     grid-auto-flow: column;        
   }
-
   
   /* services */
   .cards{
@@ -713,20 +720,15 @@ footer .logo{
 }
 
 
-
 }
-
-
-
-/* medium devices: 767 > */
-
 
 @media (min-width: 992px){
   :root{
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
-
+  
 }
+
 
 

@@ -4,9 +4,11 @@
 - ### Landing Page - 
   - Tema
     - Salão de cabelhereiro
+### Link - aplicação    
+    https://marciormed.github.io/NLW6-Together-Origin/
 
 ### Link - Layout do projeto no Figma 
-  - figma.com/file/iGG5yinsdfJVQcf5FwKadf/Origin-Six-(Copy)?node-id=61%3A144
+  https://figma.com/file/iGG5yinsdfJVQcf5FwKadf/Origin-Six-(Copy)?node-id=61%3A144
 
 
 ### Cria pacote de icones
